@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Jost&display=swap" rel="stylesheet">
+    <title>Budget Web App</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="error_msg"></p>
+        <div class="title">
+            <h1 class="title">My Budget
+                <a href="#"> <i class="fa fa-money"></i> </a>
+            </h1>
+        </div>
+
+        <h3>New Entry</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Description</label>
+                <input id="text" type="text" onfocus="this.value=''" placeholder="Enter text..." />
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount(+/-) <br/></label>
+                <input id="amount" type="number" onfocus="this.value=''" placeholder="Enter value..." />
+            </div>
+            <button class="btn">Add transaction</button>
+        </form>
+        <br/>
+
+        <div class="income-expense">
+            <div class="bg-dark">
+                <h4>Inflow</h4>
+                <p id="income" class="income">$0.00</p>
+            </div>
+            <div class="bg-dark">
+                <h4>Outflow</h4>
+                <p id="expense" class="expense">$0.00</p>
+            </div>
+            <div class="bg-dark">
+                <h4>Balance</h4>
+                <p id="balance">$0.00</p>
+            </div>
+        </div>
+        <h3>History</h3>
+
+        <ul id="list" class="list"></ul>
+    </div>
+
+
+
+    <script src="main.js "></script>
+</body>
+
+</html>
